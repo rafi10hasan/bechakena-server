@@ -71,6 +71,7 @@ async function run() {
 
       const result1 = await bookingsCollection.updateOne(query1, updatedDoc1);
       const result2 = await productsCollection.updateOne(query2, updatedDoc2);
+      console.log(result2)
       res.send(result1);
     });
 
